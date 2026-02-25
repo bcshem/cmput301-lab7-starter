@@ -60,8 +60,7 @@ public class MainActivityTest {
 // Check if in the Adapter view (given id of that adapter view),there is a data
 // (which is an instance of String) located at position zero.
 // If this data matches the text we provided then Voila! Our testshould pass
-// You can also use anything() in place of
-        is(instanceOf(String.class))
+// You can also use anything() in place ofis(instanceOf(String.class))
         onData(is(instanceOf(String.class))).inAdapterView(withId(R.id.city_list
         )).atPosition(0).check(matches((withText("Edmonton"))));
     }
